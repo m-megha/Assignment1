@@ -12,16 +12,16 @@ void main()
             printf(" ");
 	      for (j = 0; j <= i; j++)
 	       {
-            if (j == 0 || i == j)
-		          {
+                 if (j == 0 || i == j)
+	           {
                   array[i][j] = 1;
-              }
-             else
-              {
-                   array[i][j] = array[i - 1][j - 1] + array[i - 1][j];
-		          }
-		    printf("%4d", array[i][j]);
-         }
-            printf("\n");
-     }
+                   }
+                 else
+                   {
+                     array[i][j] = array[i - 1][j - 1] + array[i - 1][j];
+		   }
+		  printf("%4d", array[i][j]);
+               }
+        printf("\n");
+    }
  }
